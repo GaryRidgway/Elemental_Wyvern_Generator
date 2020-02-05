@@ -69,6 +69,5 @@ var mutations = [
     "Arcane Skeleton",
     "This wyvern has retained some of the magics used to incubate it. Its skeleton has been enhanced, and is considered magical.",
     "Any melee attack made by this wyvern is considered magical."
-  ],
-  [""]
-]
+  ]
+];
