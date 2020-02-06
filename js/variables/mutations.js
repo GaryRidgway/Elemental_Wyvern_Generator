@@ -53,7 +53,7 @@ var mutations = [
   [
     "Mydo'Kin Scales",
     "Additional muscle and scale growth can lead to imposing wyvern mutations that make them much more agile in the air. Several of the scales on this wyvern grow to the size of tower shields, and may be raised swiftly to create large amounts of drag when flying. This ability can be used to swiftly maneuver while flying, allowing for acute directional changes. Additionally, these scales can be rasised simply for their imposing size and grandeur, creating an incredibly intimidating presence.",
-    "This wyvern gains proficiency in Intimidation. Additionally, it gains the ability to take the 'Dodge' action as a bonus action twice with this trait and regains all uses of this ability when it finishes a long rest.""
+    "This wyvern gains proficiency in Intimidation. Additionally, it gains the ability to take the 'Dodge' action as a bonus action twice with this trait and regains all uses of this ability when it finishes a long rest."
   ],
   [
     "Vicious Crown",

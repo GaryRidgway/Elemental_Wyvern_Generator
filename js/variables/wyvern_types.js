@@ -12,9 +12,9 @@ var wyvern_types = [
     ""
   ],
   [
-    "acid",
-    "2d6 acid breath weapon, recharge 5-6",
-    ""
+    "poison",
+    "2d6 poison breath weapon, recharge 5-6",
+    "Poison Wyverns hide and scales will often manifest in shades of green, however, there are rarer cases where they will appear in black or purple hues. They have frills on the sides of their face, a trait specific to them. Their head is flatter and wider than other wyverns. Their scales protrude slightly higher than the norm for wyverns, giving them a more jagged appearance akin to that of a viper. A ragged strip of webbed spines runs down their back, and they are the only wyverns to claim a snake like forked tongue."
   ],
   [
     "lighning",
