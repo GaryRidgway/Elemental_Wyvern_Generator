@@ -7,5 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function add_wyvern() {
   body = document.querySelector('body');
-  body.innerHTML = EAM_randomize();
+
+  body.innerHTML = WT_randomize() + EAM_randomize();
 }

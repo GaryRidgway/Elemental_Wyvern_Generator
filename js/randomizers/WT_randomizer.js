@@ -1,21 +1,13 @@
 // This is the randomizer for Wyvern Type.
 function WT_randomize() {
-  // let wyvern_trait_text = "<div class='element-agnostic-mutations'>";
+  let wyvern_type_text = "";
+  let roll = Math.floor(Math.random() * wyvern_types.length);
+  let type = wyvern_types[type][0];
 
+  let textblock = "<div class='wyvern-type-" + type + "'>";
+  textblock += "<h2>" + type + " wyvern</h2>";
+  textblock += "</div>";
+  wyvern_type_text += textblock;
 
-  // for (i = 0; i < mutations.length; i++) {
-  //   let roll = Math.floor(Math.random() * 100);
-  //   if (roll <=10) {
-  //     let textblock = "<div class='mutation-" + i + "'>";
-  //     textblock += "<h2>" + mutations[i][0] + "</h2>";
-  //     textblock += "<p>" + mutations[i][1] + "</p>";
-  //     textblock += "<p>" + mutations[i][2] + "</p>";
-  //     textblock += "</div>";
-  //     wyvern_trait_text += textblock;
-  //   }
-  // }
-
-  // wyvern_trait_text += "</div>";
-
-  // return wyvern_trait_text;
+  return wyvern_type_text;
 }
