@@ -5,7 +5,7 @@ function EAM_randomize() {
 
   for (i = 0; i < mutations.length; i++) {
     let roll = Math.floor(Math.random() * 100);
-    if (roll <=10) {
+    if (roll <= mutations[i][3]) {
       let textblock = "<div class='mutation-" + i + "'>";
       textblock += "<h2>" + mutations[i][0] + "</h2>";
       textblock += "<p>" + mutations[i][1] + "</p>";
