@@ -69,5 +69,10 @@ var mutations = [
     "Arcane Skeleton",
     "This wyvern has retained some of the magics used to incubate it. Its skeleton has been enhanced, and is considered magical.",
     "Any melee attack made by this wyvern is considered magical."
-  ]
+  ],
+  [
+    "Draconic Sentience",
+    "This wyvern has been affected by direct magical manipulation during its incubation, manifesting as heightened mental acuity. The result of this magical influence is not only sentience and a conscious self-awareness, but a personality unique and all its own. Where one wyvern might use its power to subjugate others, some may decide upon more benevolent actions, with all manner of temperaments a possibility. Additionally, with this increased self awareness some wyverns make the decision to become magical practitioners. Whether manifesting through their draconic bloodline, intense study, or through divine means, this can greatly alter the way a wyvern interacts with the world.",
+    "If this wyvern moves at least 10 feet straight toward a target and then hits it with a melee attack on the same turn, the wyvern can then strike the target with its horns as well, and the target takes an extra 9 (2d8) piercing damage. If the target is a creature of a size category equal to or less than this wyvern, it must succeed on a contested athletics check with this wyvern or be pushed up to 10 feet away and knocked prone."
+  ],
 ];
