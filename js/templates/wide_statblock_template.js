@@ -3,8 +3,8 @@ var wide_statblock_template = '\
   <hr class="orange-border" />\
   <div class="section-left">\
     <div class="creature-heading">\
-      <h1>{{NAME}}</h1>\
-      <h2>Large dragon, unaligned</h2>\
+      <h1>{{WYVERN_TYPE}} Wyvern</h1>\
+      <h2>{{SIZE}} dragon, unaligned</h2>\
     </div> <!-- creature heading -->\
     <svg height="5" width="100%" class="tapered-rule">\
       <polyline points="0,0 400,2.5 0,5"></polyline>\
@@ -28,27 +28,27 @@ var wide_statblock_template = '\
       <div class="abilities">\
         <div class="ability-strength">\
           <h4>STR</h4>\
-          <p>15 (+2)</p>\
+          <p>{{STR_SCORE}}</p>\
         </div> <!-- ability strength -->\
         <div class="ability-dexterity">\
           <h4>DEX</h4>\
-          <p>10 (+0)</p>\
+          <p>{{DEX_SCORE}}</p>\
         </div> <!-- ability dexterity -->\
         <div class="ability-constitution">\
           <h4>CON</h4>\
-          <p>15 (+2)</p>\
+          <p>{{CON_SCORE}}</p>\
         </div> <!-- ability constitution -->\
         <div class="ability-intelligence">\
           <h4>INT</h4>\
-          <p>5 (-3)</p>\
+          <p>{{INT_SCORE}}</p>\
         </div> <!-- ability intelligence -->\
         <div class="ability-wisdom">\
           <h4>WIS</h4>\
-          <p>12 (+1)</p>\
+          <p>{{WIS_SCORE}}</p>\
         </div> <!-- ability wisdom -->\
         <div class="ability-charisma">\
           <h4>CHA</h4>\
-          <p>6 (-2)</p>\
+          <p>{{CHA_SCORE}}</p>\
         </div> <!-- ability charisma -->\
       </div> <!-- abilities -->\
       <svg height="5" width="100%" class="tapered-rule">\
@@ -56,12 +56,7 @@ var wide_statblock_template = '\
     </svg>\
       <div class="property-line first">\
         <h4>Damage Immunities</h4>\
-        <p>poison, psychic</p>\
-      </div> <!-- property line -->\
-      <div class="property-line">\
-        <h4>Condition Immunities</h4>\
-        <p>blinded, charmed, deafened, exhaustion, frightened,\
-            petrified, poisoned</p>\
+        <p>{{DAMAGE IMMUNITIES}}</p>\
       </div> <!-- property line -->\
       <div class="property-line">\
         <h4>Senses</h4>\
@@ -76,41 +71,26 @@ var wide_statblock_template = '\
       <polyline points="0,0 400,2.5 0,5"></polyline>\
     </svg>\
     <div class="property-block">\
-      <h4>Antimagic Suceptibility.</h4>\
-      <p>The armor is incapacitated while in the area of an <i>antimagic\
-          field</i>.  If targeted by <i>dispel magic</i>, the armor must succeed\
-          on a Constitution saving throw against the caster’s spell save DC or\
-          fall unconscious for 1 minute.</p>\
-    </div> <!-- property block -->\
-    <div class="property-block">\
-      <h4>False Appearance.</h4>\
-      <p>While the armor remains motionless, it is indistinguishable from a\
-          normal suit of armor.</p>\
+      <h4>Mutation Abilities</h4>\
+      <p>{{MUTATION_ABILITIES}}</p>\
     </div> <!-- property block -->\
   </div> <!-- section left -->\
   <div class="section-right">\
     <div class="actions">\
       <h3>Actions</h3>\
       <div class="property-block">\
-        <h4>Multiattack.</h4>\
-        <p>The armor makes two melee attacks.</p>\
+        <h4>Bite.</h4>\
+        <p><i>Melee Weapon Attack:</i> +PROF + STR to hit, reach 10 ft., one creature.\
+        <i>Hit:</i> (2d6 + STR) piercing damage.</p>\
       </div> <!-- property block -->\
       <div class="property-block">\
-        <h4>Slam.</h4>\
-        <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target.\
-        <i>Hit:</i> 5 (1d6 + 2) bludgeoning damage.</p>\
-      </div> <!-- property block -->\
-    </div> <!-- actions -->\
-    <div class="actions">\
-      <h3>Legendary Actions</h3>\
-      <div class="property-block">\
-        <h4>Multiattack.</h4>\
-        <p>The armor makes two melee attacks.</p>\
+        <h4>Claws.</h4>\
+        <p><i>Melee Weapon Attack:</i> +PROF + STR to hit, reach 5 ft., one creature.\
+        <i>Hit:</i> (2d8 + STR) slashing damage.</p>\
       </div> <!-- property block -->\
       <div class="property-block">\
-        <h4>Slam.</h4>\
-        <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target.\
-        <i>Hit:</i> 5 (1d6 + 2) bludgeoning damage.</p>\
+        <h4>{{SPECIAL_WEAPON}} (Recharge 5-6).</h4>\
+        <p>{{BREATH_WEAPON_DESCRIPTION}}</p>\
       </div> <!-- property block -->\
     </div> <!-- actions -->\
   </div> <!-- section right -->\
