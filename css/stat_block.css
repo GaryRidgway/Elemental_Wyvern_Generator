@@ -1,6 +1,6 @@
 .stat-block {
   text-align: left;
-  margin: 20px;
+  margin: 20px 0px;
   display: inline-block;
   vertical-align: top;
   min-width:280px;
@@ -50,7 +50,7 @@
   border-left: none;
   height: 5px;
   padding: 0 10px 0;
-  margin: -10px -10px 0;
+  margin: -10px -12px 0;
   box-sizing: initial;
   position: relative;
 }
@@ -75,7 +75,8 @@
   transform: skew(-35deg);
 }
 .orange-border.bottom{
-  margin: 15px -10px -20px;
+  margin-top: 15px;
+  margin-bottom: -20px;
 }
 .tapered-rule{
   display: block;
@@ -87,6 +88,7 @@
   stroke: #922610;
 }
 .creature-heading h1{
+  text-transform: capitalize;
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
   color: #922610;
   font-size: 23px;

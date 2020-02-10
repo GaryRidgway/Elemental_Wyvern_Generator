@@ -7,12 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function add_wyvern() {
   body = document.querySelector('body');
-  let wyvern = WT_randomize()
+  let wyvern    = WT_randomize();
+  let mutations = EAM_randomize();
+  let statblock = statblock_create(wyvern.wyvernTypeData);
+  cl(wyvern);
 
   body.innerHTML = wyvern.wyvernTypeText
-                 + wide_statblock_template
+                 + statblock
                  + wyvern.levelTable
-                 + EAM_randomize();
+                 + mutations;
 
   // body.innerHTML = create_table(fire_wyvern_level_chart);
   // body.innerHTML = wide_statblock_template;

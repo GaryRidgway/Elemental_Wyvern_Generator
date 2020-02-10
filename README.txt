@@ -1,7 +1,5 @@
 TODO
 
-add "to a maximum of 20" to relevant stats
-
-"acquatic" is spelled wrong
+add multiattack at certain levels?
 
 make equation to allow for certain rolls to be higher on wyverns with less options
