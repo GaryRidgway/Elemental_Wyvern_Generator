@@ -12,7 +12,10 @@ function WT_randomize() {
   textblock += "</div>";
   wyvern_type_text += textblock;
 
-  wyvern_type_text += create_table(wyvern.level_chart);
+  let wyvern_object = {
+    wyvernTypeText : wyvern_type_text,
+    levelTable : create_table(wyvern.level_chart)
+  };
 
-  return wyvern_type_text;
+  return wyvern_object;
 }
