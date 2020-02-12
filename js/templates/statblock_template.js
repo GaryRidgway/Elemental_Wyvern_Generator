@@ -113,7 +113,7 @@ function statblock_create(wyvernTypeData) {
       <div class="property-block first">\
         <h4>Extra Attack</h4>\
         <p>Beginning at 5th Level, this wyvern can can Attack twice using its Bite or Claws, instead of once, whenever it attacks with either its Bite or Claws action on its Turn.<br><br>\
-        The number of attacks increases to three when this wyvern reaches 11th level and to four when it reaches 20th. Only one of these attacks maybe be a Bite.</p>\
+        The number of attacks increases to three when this wyvern reaches 11th level and to four when it reaches 20th. Only one of these attacks may be a Bite.</p>\
       </div> <!-- property block -->\
       <div class="property-block">\
         <h4>Mutation Abilities</h4>\
