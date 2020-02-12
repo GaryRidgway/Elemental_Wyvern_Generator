@@ -130,6 +130,7 @@
 .abilities{
   text-align: center;
   color: #922610;
+  max-width: 400px;
 }
 .abilities > div{
   display: inline-block;

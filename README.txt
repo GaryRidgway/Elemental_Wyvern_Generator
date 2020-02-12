@@ -11,3 +11,5 @@ make a senses generator helper function
 make a languages generator helper function
 
 change posessive apostrophes
+
+add info for the tab, icon, name, etc.

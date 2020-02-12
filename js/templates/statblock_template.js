@@ -20,7 +20,7 @@ function statblock_create(wyvernTypeData) {
     extra     : ''
   };
   // Breath Weapon Damage Type.
-  w.BWDT = (wyvernTypeData.breath_weapon_damage_type != null) ? wyvernTypeData.breath_weapon_damage_type : 'none';
+  w.BWDT = wyvernTypeData.breath_weapon_damage_type;
   w.special_ability_title = wyvernTypeData.special_ability_title;
   w.special_ability_description = wyvernTypeData.special_ability_description;
   w.proficiency = wyvernTypeData.level_chart[w.level][1];
@@ -87,11 +87,17 @@ function statblock_create(wyvernTypeData) {
         <div class="property-line first">\
           <h4>Skills</h4>\
           <p>' + w.skills + '</p>\
-        </div> <!-- property line -->\
-        <div class="property-line">\
-          <h4>Damage Immunities</h4>\
-          <p>' + w.BWDT + '</p>\
-        </div> <!-- property line -->\
+        </div> <!-- property line -->';
+        
+        if (w.BWDT != null) {
+          statblock_template += '\
+            <div class="property-line">\
+              <h4>Damage Immunities</h4>\
+              <p>' + w.BWDT + '</p>\
+            </div> <!-- property line -->';
+        }
+          
+        statblock_template += '\
         <div class="property-line">\
           <h4>Senses</h4>\
           <p>' + w.senses + '</p>\
