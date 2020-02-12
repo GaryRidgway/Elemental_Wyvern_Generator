@@ -1,6 +1,7 @@
 function statblock_create(wyvernTypeData) {
   // Create a Wyvern Variable Dictionary to hold the wyvern Data.
   let w = {};
+  w.level = 1;
   w.Stats = {
     STR : 15,
     DEX : 10,
@@ -13,11 +14,19 @@ function statblock_create(wyvernTypeData) {
   w.Size = 'Large';
   w.AC = mod(w.Stats.DEX) + 13;
   w.Speed = {
-    walk            : 20   ,
-    secondary       : 80   ,
-    secondaryPrefix : 'fly',
-    extra           : ''
+    walk      : 20   ,
+    fly       : 80   ,
+    flyPrefix : 'fly',
+    extra     : ''
   };
+  // Breath Weapon Damage Type.
+  w.BWDT = (wyvernTypeData.breath_weapon_damage_type != null) ? wyvernTypeData.breath_weapon_damage_type : 'none';
+  w.special_ability_title = wyvernTypeData.special_ability_title;
+  w.special_ability_description = wyvernTypeData.special_ability_description;
+  w.proficiency = wyvernTypeData.level_chart[w.level][1];
+  w.languages = "&#8212;";
+  w.skills = "&#8212;";
+  w.senses = "&#8212;";
 
   var statblock_template = '\
   <div class="stat-block wide">\
@@ -25,7 +34,7 @@ function statblock_create(wyvernTypeData) {
     <div class="section-left">\
       <div class="creature-heading">\
         <h1>' + w.Type + ' Wyvern</h1>\
-        <h2>' + w.Size + ' dragon, unaligned</h2>\
+        <h2>Level ' + w.level + ' ' + w.Size + ' dragon, unaligned</h2>\
       </div> <!-- creature heading -->\
       <svg height="5" width="100%" class="tapered-rule">\
         <polyline points="0,0 400,2.5 0,5"></polyline>\
@@ -76,16 +85,20 @@ function statblock_create(wyvernTypeData) {
         <polyline points="0,0 400,2.5 0,5"></polyline>\
       </svg>\
         <div class="property-line first">\
+          <h4>Skills</h4>\
+          <p>' + w.skills + '</p>\
+        </div> <!-- property line -->\
+        <div class="property-line">\
           <h4>Damage Immunities</h4>\
-          <p>{{DAMAGE IMMUNITIES}}</p>\
+          <p>' + w.BWDT + '</p>\
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Senses</h4>\
-          <p>{{SENSES}}</p>\
+          <p>' + w.senses + '</p>\
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Languages</h4>\
-          <p>&mdash;{{LANGUAGES}}</p>\
+          <p>' + w.languages + '</p>\
         </div> <!-- property line -->\
       </div> <!-- top stats -->\
       <svg height="5" width="100%" class="tapered-rule">\
@@ -101,17 +114,17 @@ function statblock_create(wyvernTypeData) {
         <h3>Actions</h3>\
         <div class="property-block">\
           <h4>Bite.</h4>\
-          <p><i>Melee Weapon Attack:</i> +PROF + STR to hit, reach 10 ft., one creature.\
-          <i>Hit:</i> (2d6 + STR) piercing damage.</p>\
+          <p><i>Melee Weapon Attack:</i> +' + (parseInt(w.proficiency) + mod(w.Stats.STR)) + ' to hit (proficiency bonus + Strength modifier), reach 10 ft., one creature.\
+          <i>Hit:</i> ' + (7 + mod(w.Stats.STR)) + ' (2d6 + Strength modifier) piercing damage.</p>\
         </div> <!-- property block -->\
         <div class="property-block">\
           <h4>Claws.</h4>\
-          <p><i>Melee Weapon Attack:</i> +PROF + STR to hit, reach 5 ft., one creature.\
-          <i>Hit:</i> (2d8 + STR) slashing damage.</p>\
+          <p><i>Melee Weapon Attack:</i> +' + (parseInt(w.proficiency) + mod(w.Stats.STR)) + ' to hit (proficiency bonus + Strength modifier), reach 5 ft., one creature.\
+          <i>Hit:</i> ' + (9 + mod(w.Stats.STR)) + ' (2d8 + Strength modifier) slashing damage.</p>\
         </div> <!-- property block -->\
         <div class="property-block">\
-          <h4>{{SPECIAL_WEAPON}} (Recharge 5-6).</h4>\
-          <p>{{BREATH_WEAPON_DESCRIPTION}}</p>\
+          <h4>' + w.special_ability_title + '</h4>\
+          <p>' + w.special_ability_description + '</p>\
         </div> <!-- property block -->\
       </div> <!-- actions -->\
     </div> <!-- section right -->\

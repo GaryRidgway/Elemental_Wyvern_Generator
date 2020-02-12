@@ -83,7 +83,7 @@ var mutations = [
   [
     "Titanous Form",
     "This wyvern will have increased metabolisim and muscle density in their youth, which might cause it to reach a titanous size by adulthood, often growing up to twice as large as a normal wyvern. This, while it makes them proportionally slower in flight and less aerobatic compared to their smaller kin, gives them incredible strength and an astoundingly fortified constitution.",
-    "This wyvern doubles in size and now has the Size Category of 'Huge'. Its AC is decreased by 4, and its Dexterity is decreased by 3. Additionally, its Strength, Maximum Strength, Constitution, and Maximum Constitution increase by 3 to maximums of 20.",
+    "This wyvern doubles in size and now has the Size Category of 'Huge'. Its AC is decreased by 3, and its Dexterity is decreased by 3. Additionally, its Strength, Maximum Strength, Constitution, and Maximum Constitution increase by 3 to maximums of 20.",
     base_percentage
   ],
   [
