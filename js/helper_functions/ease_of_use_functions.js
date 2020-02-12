@@ -1,6 +1,7 @@
 // Simplified console log.
 function cl(log) {
-  console.log(log);
+  var caller_line = (new Error).stack.split("\n")[2].split(' ')[6];
+  console.log(log, caller_line);
 }
 
 // Calculate the modifier from the stat.

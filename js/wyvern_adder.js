@@ -13,8 +13,10 @@ function add_wyvern() {
   cl(wyvern);
 
   body.innerHTML = wyvern.wyvernTypeText
+                 + '<div class="flex-half">'
                  + statblock
                  + wyvern.levelTable
+                 + '</div>'
                  + mutations;
 
   // body.innerHTML = create_table(fire_wyvern_level_chart);

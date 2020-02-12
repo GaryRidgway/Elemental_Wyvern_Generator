@@ -13,9 +13,10 @@ function statblock_create(wyvernTypeData) {
   w.Size = 'Large';
   w.AC = mod(w.Stats.DEX) + 13;
   w.Speed = {
-    walk            : 20,
-    secondary       : 80,
-    secondaryPrefix : 'fly'
+    walk            : 20   ,
+    secondary       : 80   ,
+    secondaryPrefix : 'fly',
+    extra           : ''
   };
 
   var statblock_template = '\
@@ -40,7 +41,7 @@ function statblock_create(wyvernTypeData) {
         </div> <!-- property line -->\
         <div class="property-line last">\
           <h4>Speed</h4>\
-          <p>' + w.Speed.walk + 'ft., ' + w.Speed.secondaryPrefix + ' ' + w.Speed.secondary + 'ft.</p>\
+          <p>' + w.Speed.walk + 'ft., ' + w.Speed.flyPrefix + ' ' + w.Speed.fly + w.Speed.extra + 'ft.</p>\
         </div> <!-- property line -->\
         <svg height="5" width="100%" class="tapered-rule">\
         <polyline points="0,0 400,2.5 0,5"></polyline>\

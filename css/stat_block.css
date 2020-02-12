@@ -1,7 +1,7 @@
 .stat-block {
+  display: block;
   text-align: left;
   margin: 20px 0px;
-  display: inline-block;
   vertical-align: top;
   min-width:280px;
   background: #FDF1DC;
