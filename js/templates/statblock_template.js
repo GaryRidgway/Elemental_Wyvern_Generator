@@ -42,7 +42,7 @@ function statblock_create(wyvernTypeData) {
       <div class="top-stats">\
         <div class="property-line first">\
           <h4>Armor Class</h4>\
-          <p>' + w.AC + ' (13 + Dexterity modifier)(natural armor)</p>\
+          <p>' + w.AC + ' (13 + Dexterity modifier) (natural armor)</p>\
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Hit Points</h4>\
