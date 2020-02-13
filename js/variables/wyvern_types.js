@@ -7,7 +7,8 @@ var wyvern_types = [
     level_chart: fire_wyvern_level_chart,
     breath_weapon_damage_type : 'fire',
     special_ability_title : 'Fire Breath (Recharge 5-6)',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY'
+    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_type: 'action'
   },
   {
     type: "ice",
@@ -15,7 +16,8 @@ var wyvern_types = [
     level_chart: ice_wyvern_level_chart,
     breath_weapon_damage_type : 'cold',
     special_ability_title : 'Cold Breath (Recharge 5-6)',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY'
+    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_type: 'action'
   },
   {
     type: "death",
@@ -23,7 +25,8 @@ var wyvern_types = [
     level_chart: death_wyvern_level_chart,
     breath_weapon_damage_type : 'necrotic',
     special_ability_title : 'Essence Siphon (Recharge 5-6)',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY'
+    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_type: 'action'
   },
   {
     type: "lighning",
@@ -31,7 +34,8 @@ var wyvern_types = [
     level_chart: lightning_wyvern_level_chart,
     breath_weapon_damage_type : 'lightning',
     special_ability_title : 'Lightning Breath (Recharge 5-6)',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY'
+    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_type: 'action'
   },
   {
     type: "rock",
@@ -39,6 +43,7 @@ var wyvern_types = [
     level_chart: rock_wyvern_level_chart,
     breath_weapon_damage_type : null,
     special_ability_title : 'Non-Magical Damage Reduction',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY'
+    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_type: 'ability'
   }
 ];

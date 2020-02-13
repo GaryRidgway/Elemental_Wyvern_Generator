@@ -2,10 +2,8 @@ TODO
 
 make equation to allow for certain rolls to be higher on wyverns with less options
 
-figure out how to move rock wyvern special ability to "Abilities" gracefully
-
-make a skill generator helper function
-
 change posessive apostrophes
+
+descriptions of special abilities.
 
 add info for the tab, icon, name, etc.

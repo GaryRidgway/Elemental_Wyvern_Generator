@@ -23,14 +23,18 @@ function statblock_create(wyvernTypeData) {
   w.BWDT = wyvernTypeData.breath_weapon_damage_type;
   w.special_ability_title = wyvernTypeData.special_ability_title;
   w.special_ability_description = wyvernTypeData.special_ability_description;
+  w.special_ability_type = wyvernTypeData.special_ability_type;
   w.proficiency = wyvernTypeData.level_chart[w.level][1];
   w.languages = [
     "&#8212;"
   ];
-  w.skills = [];
+  // Each skill has the skill value and whether it has expertise.
+  w.skills = {
+    'Perception' : [w.Stats.WIS, false]
+  };
   w.senses = [
     'darkvision 60ft.',
-    'passive Perception ' + (mod(w.Stats.WIS) + 10)
+    'passive Perception ' + (mod(w.Stats.WIS) + 10 + ((w.skills['Perception'] != undefined) ? parseInt(w.proficiency) : 0))
   ];
 
   var statblock_template = '\
@@ -91,7 +95,7 @@ function statblock_create(wyvernTypeData) {
       </svg>\
         <div class="property-line first">\
           <h4>Skills</h4>\
-          <p>' + w.skills + '</p>\
+          <p>' + skill_string_builder(w.skills, w.proficiency) + '</p>\
         </div> <!-- property line -->';
 
         if (w.BWDT != null) {
@@ -116,12 +120,22 @@ function statblock_create(wyvernTypeData) {
         <polyline points="0,0 400,2.5 0,5"></polyline>\
       </svg>\
       <div class="property-block first">\
-        <h4>Extra Attack</h4>\
+        <h4>Extra Attack.</h4>\
         <p>Beginning at 5th Level, this wyvern can Attack twice using its Bite or Claws, instead of once, whenever it attacks with either its Bite or Claws action on its Turn.<br><br>\
         The number of attacks increases to three when this wyvern reaches 11th level and to four when it reaches 20th. Only one of these attacks may be a Bite.</p>\
-      </div> <!-- property block -->\
+      </div> <!-- property block -->'
+
+      if (w.special_ability_type == 'ability') {
+        statblock_template +='\
+          <div class="property-block">\
+            <h4>' + w.special_ability_title + '</h4>\
+            <p>' + w.special_ability_description + '</p>\
+          </div> <!-- property block -->'
+      }
+
+      statblock_template +='\
       <div class="property-block">\
-        <h4>Mutation Abilities</h4>\
+        <h4>Mutation Abilities.</h4>\
         <p>{{MUTATION_ABILITIES}}</p>\
       </div> <!-- property block -->\
     </div> <!-- section left -->\
@@ -137,11 +151,17 @@ function statblock_create(wyvernTypeData) {
           <h4>Claws.</h4>\
           <p><i>Melee Weapon Attack:</i> +' + (parseInt(w.proficiency) + mod(w.Stats.STR)) + ' to hit (proficiency bonus + Strength modifier), reach 5 ft., one creature.\
           <i>Hit:</i> ' + (9 + mod(w.Stats.STR)) + ' (2d8 + Strength modifier) slashing damage.</p>\
-        </div> <!-- property block -->\
-        <div class="property-block">\
-          <h4>' + w.special_ability_title + '</h4>\
-          <p>' + w.special_ability_description + '</p>\
-        </div> <!-- property block -->\
+        </div> <!-- property block -->'
+
+        if (w.special_ability_type == 'action') {
+          statblock_template +='\
+            <div class="property-block">\
+              <h4>' + w.special_ability_title + '</h4>\
+              <p>' + w.special_ability_description + '</p>\
+            </div> <!-- property block -->'
+        }
+
+      statblock_template +='\
       </div> <!-- actions -->\
     </div> <!-- section right -->\
     <hr class="orange-border bottom" />\

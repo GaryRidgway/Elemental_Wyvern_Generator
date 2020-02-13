@@ -9,13 +9,15 @@ function mod(STAT) {
   return Math.floor((STAT - 10) / 2);
 }
 
+// Create a modifier string based on positive or negative.
+function modDisplay(MOD) {
+  return (MOD > -1) ? ('+' + MOD) : MOD.toString();
+}
+
 // Calculate a string for statistic displaying with a display of ABILITY (+/-MOD).
 function statDisplay(STAT) {
   let modifier = mod(STAT);
-  let prefix = '';
-  if (modifier > 0) {
-    prefix = '+';
-  }
+  let modString = modDisplay(modifier);
 
-  return STAT + ' (' + prefix + modifier + ')';
+  return STAT + ' (' + modString + ')';
 }

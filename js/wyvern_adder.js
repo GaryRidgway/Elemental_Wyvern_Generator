@@ -10,7 +10,6 @@ function add_wyvern() {
   let wyvern    = WT_randomize();
   let mutations = EAM_randomize();
   let statblock = statblock_create(wyvern.wyvernTypeData);
-  cl(wyvern);
 
   body.innerHTML = wyvern.wyvernTypeText
                  + '<div class="flex-half">'
