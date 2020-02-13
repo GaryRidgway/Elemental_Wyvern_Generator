@@ -83,6 +83,11 @@
       bottom: 0;
     }
 
+  .level-table-container h3 {
+    margin: 0.1rem 0 0.5rem 0;
+    text-transform: capitalize;
+  }
+
 .level-table {
   color: #333;
   width: 100%;

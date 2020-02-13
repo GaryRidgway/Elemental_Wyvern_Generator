@@ -14,7 +14,7 @@ function WT_randomize() {
 
   let wyvern_object = {
     wyvernTypeText : wyvern_type_text,
-    levelTable     : create_table(wyvern.level_chart),
+    levelTable     : create_table(wyvern.level_chart, wyvern.type),
     wyvernTypeData : wyvern
   };
 

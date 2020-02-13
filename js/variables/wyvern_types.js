@@ -43,7 +43,7 @@ var wyvern_types = [
     level_chart: rock_wyvern_level_chart,
     breath_weapon_damage_type : null,
     special_ability_title : 'Non-Magical Damage Reduction',
-    special_ability_description : 'THIS IS NOT FILLED OUT IN THE WYVERN TYPES DATA ARRAY',
+    special_ability_description : 'Bludgeoning, piercing, and slashing damage that this wyvern takes from non-magical weapons is reduced by the amount shown in the Non-Magical Damage Reduction column of the rock wyvern level table.',
     special_ability_type: 'ability'
   }
 ];

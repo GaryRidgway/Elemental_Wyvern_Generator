@@ -1,11 +1,12 @@
-function create_table(table_array) {
+function create_table(table_array, wyvern_type) {
   let table_html = "\
     <div class='level-table-container'>\
-    <div class='corner top-left'><div class='inner-curve'></div></div>\
-    <div class='corner top-right'><div class='inner-curve'></div></div>\
-    <div class='corner bottom-left'><div class='inner-curve'></div></div>\
-    <div class='corner bottom-right'><div class='inner-curve'></div></div>\
-    <table class='level-table'>";
+      <div class='corner top-left'><div class='inner-curve'></div></div>\
+      <div class='corner top-right'><div class='inner-curve'></div></div>\
+      <div class='corner bottom-left'><div class='inner-curve'></div></div>\
+      <div class='corner bottom-right'><div class='inner-curve'></div></div>\
+      <table class='level-table'>\
+      <h3>" + wyvern_type + " Wyvern level table</h3>";
 
   for (i = 0; i < table_array.length; i++) {
     table_html += "<tr>";
