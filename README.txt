@@ -6,4 +6,6 @@ change posessive apostrophes
 
 descriptions of special abilities.
 
+MUTATIONS THAT AFFECT STUFF
+
 add info for the tab, icon, name, etc.

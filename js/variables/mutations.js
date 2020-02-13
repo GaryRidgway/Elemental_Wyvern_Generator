@@ -10,7 +10,7 @@ var mutations = [
   ],
   [
     "Adherent Grasp",
-    "This wyvern has increased muscle strength and differeng talon tensile strengths, which can give a wyvern great ability to scale sheer faces, and even move up entire mountain stealthily by holding on to their faces without being detected.",
+    "This wyvern has increased muscle strength and differeng talon tensile strengths, which can give a wyvern great ability to scale sheer faces, and even move up entire mountains stealthily by holding on to the rocky faces without being detected.",
     "This wyvern gains proficiency in Stealth, and a Climbing Speed equivalent to its Walking Speed",
     base_percentage
   ],
@@ -29,7 +29,7 @@ var mutations = [
   [
     "Armor of Pangol",
     "This wyvern is kin to the well defended Pangolin, and as such its scales might grow larger on their body, creating a natural armor plating often paired with a wider and equally armored tail. While slowed down considerably, it makes up for its lessened aerobatic accuity with one of the most robust carapaces observed in nature.",
-    "This wyverns Flying speed is reduced by 30 feet, and its AC is increased by 3",
+    "This wyvern's Flying speed is reduced by 30 feet, and its AC is increased by 3",
     base_percentage
   ],
   [
@@ -53,7 +53,7 @@ var mutations = [
   [
     "Draconic Sentience",
     "This wyvern has been affected by direct magical manipulation during its incubation, manifesting as heightened mental acuity. The result of this magical influence is not only sentience and a conscious self-awareness, but a personality unique and all its own. Where one wyvern might use its power to subjugate others, some may decide upon more benevolent actions, with all manner of temperaments a possibility.<br/><br/>Additionally, with this increased self awareness some wyverns make the decision to become magical practitioners. Whether manifesting through their draconic bloodline, intense study, or through divine means, this can greatly alter the way a wyvern interacts with the world.",
-    "Roll a d10 and add 7 for each of its Intelligence, Wisdom, and Charisma Ability Scores.<br/><br/>These are its new respective Ability Scores. Additionally, if this wyvern decides to become a spellcaster, it must first meet certain criteria. As it ages, it must train to embrace its magical abilities, sacrificing two Ability Score Increases at levels 4, 8, 12, 16, or 19 to be able to cast spells. After selecting either Cleric, Sorcerer, or Wizard, it must also meet the Ability Score requirements as stated in the multiclassing rules of the Players Handbook. Provided it meets all class prerequisites, this wyvern will use the relevant spellcasting Ability Modifiers when casting spells. It gains spell slots, prepares spells, and chooses spells as if it were a spellcaster of the chosen type with a level equivalent to half the wyverns level, rounded down, plus one.",
+    "Roll a d10 and add 7 for each of its Intelligence, Wisdom, and Charisma Ability Scores.<br/><br/>These are its new respective Ability Scores. Additionally, if this wyvern decides to become a spellcaster, it must first meet certain criteria. As it ages, it must train to embrace its magical abilities, sacrificing two Ability Score Increases at levels 4, 8, 12, 16, or 19 to be able to cast spells. After selecting either Cleric, Sorcerer, or Wizard, it must also meet the Ability Score requirements as stated in the multiclassing rules of the Players Handbook. Provided it meets all class prerequisites, this wyvern will use the relevant spellcasting Ability Modifiers when casting spells. It gains spell slots, prepares spells, and chooses spells as if it were a spellcaster of the chosen type with a level equivalent to half the wyvern's level, rounded down, plus one.",
     base_percentage*2
   ],
   [

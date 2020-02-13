@@ -134,10 +134,6 @@ function statblock_create(wyvernTypeData) {
       }
 
       statblock_template +='\
-      <div class="property-block">\
-        <h4>Mutation Abilities.</h4>\
-        <p>{{MUTATION_ABILITIES}}</p>\
-      </div> <!-- property block -->\
     </div> <!-- section left -->\
     <div class="section-right">\
       <div class="actions">\
