@@ -13,22 +13,7 @@ function create_table(table_array, wyvern_type) {
 
     for (j = 0; j < table_array[i].length; j++) {
       if (i != 0) {
-        // This is all just to add an extra space so that the breath weapon damages line up.
-        if (j == table_array[i].length - 1) {
-          let split_breath = table_array[i][j].split(" ");
-          let dmg = split_breath.splice(0, 1)[0];
-          let rest = split_breath.join(" ");
-
-          if (dmg.length == 3) {
-            table_html += "<td>" + dmg + "\xa0\xa0" + rest + "</td>";
-          }
-          else {
-            table_html += "<td>" + dmg + "\xa0" + rest + "</td>";
-          }
-        }
-        else {
-          table_html += "<td>" + table_array[i][j] + "</td>";
-        }
+        table_html += "<td>" + table_array[i][j]+ "</td>";
       }
       else {
         table_html += "<th>" + table_array[i][j] + "</th>";
