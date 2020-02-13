@@ -24,9 +24,14 @@ function statblock_create(wyvernTypeData) {
   w.special_ability_title = wyvernTypeData.special_ability_title;
   w.special_ability_description = wyvernTypeData.special_ability_description;
   w.proficiency = wyvernTypeData.level_chart[w.level][1];
-  w.languages = "&#8212;";
-  w.skills = "&#8212;";
-  w.senses = "&#8212;";
+  w.languages = [
+    "&#8212;"
+  ];
+  w.skills = [];
+  w.senses = [
+    'darkvision 60ft.',
+    'passive Perception ' + (mod(w.Stats.WIS) + 10)
+  ];
 
   var statblock_template = '\
   <div class="stat-block wide">\
@@ -88,7 +93,7 @@ function statblock_create(wyvernTypeData) {
           <h4>Skills</h4>\
           <p>' + w.skills + '</p>\
         </div> <!-- property line -->';
-        
+
         if (w.BWDT != null) {
           statblock_template += '\
             <div class="property-line">\
@@ -96,15 +101,15 @@ function statblock_create(wyvernTypeData) {
               <p>' + w.BWDT + '</p>\
             </div> <!-- property line -->';
         }
-          
+
         statblock_template += '\
         <div class="property-line">\
           <h4>Senses</h4>\
-          <p>' + w.senses + '</p>\
+          <p>' + senses_string_builder(w.senses) + '</p>\
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Languages</h4>\
-          <p>' + w.languages + '</p>\
+          <p>' + languages_string_builder(w.languages) + '</p>\
         </div> <!-- property line -->\
       </div> <!-- top stats -->\
       <svg height="5" width="100%" class="tapered-rule">\
