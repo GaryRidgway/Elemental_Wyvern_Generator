@@ -7,7 +7,7 @@ var wyvern_types = [
     level_chart: fire_wyvern_level_chart,
     breath_weapon_damage_type : 'fire',
     special_ability_title : 'Fire Breath (Recharge 5-6)',
-    special_ability_description : 'This wyvern exhales fire in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} Dexterity saving throw, taking fire damage equal to the amount determined by the Breath Weapon column of the Fire Wyvern Level Table on a failed save, or half as much damage on a successful one.',
+    special_ability_description : 'This wyvern exhales fire in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Dexterity saving throw, taking fire damage equal to the amount determined by the Breath Weapon column of the Fire Wyvern Level Table on a failed save, or half as much damage on a successful one.',
     special_ability_type: 'action'
   },
   {
@@ -16,7 +16,7 @@ var wyvern_types = [
     level_chart: ice_wyvern_level_chart,
     breath_weapon_damage_type : 'cold',
     special_ability_title : 'Cold Breath (Recharge 5-6)',
-    special_ability_description : 'This wyvern exhales an icy blast in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} Constitution saving throw, taking cold damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
+    special_ability_description : 'This wyvern exhales an icy blast in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw, taking cold damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
     special_ability_type: 'action'
   },
   {
@@ -25,7 +25,7 @@ var wyvern_types = [
     level_chart: death_wyvern_level_chart,
     breath_weapon_damage_type : 'necrotic',
     special_ability_title : 'Essence Siphon (Recharge 5-6)',
-    special_ability_description : 'This wyvern chooses a humanoid that it can see within 60 feet. The target must succeed on a {{SAVE_DC}} Constitution saving throw, taking necrotic damage equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table on a failed save, or half as much damage on a successful one. This wyvern regains hit points equal to half the amount of necrotic damage dealt. The target must then make a {{SAVE_DC}} Constitution saving throw at the end of each of its turns. Until the target succeeds, they take the same amount of necrotic damage again each turn and this wyvern regains hit points equal to half of that amount.',
+    special_ability_description : 'This wyvern chooses a humanoid that it can see within 60 feet. The target must succeed on a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw, taking necrotic damage equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table on a failed save, or half as much damage on a successful one. This wyvern regains hit points equal to half the amount of necrotic damage dealt. The target must then make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw at the end of each of its turns. Until the target succeeds, they take the same amount of necrotic damage again each turn and this wyvern regains hit points equal to half of that amount.',
     special_ability_type: 'action'
   },
   {
@@ -34,7 +34,7 @@ var wyvern_types = [
     level_chart: lightning_wyvern_level_chart,
     breath_weapon_damage_type : 'lightning',
     special_ability_title : 'Lightning Breath (Recharge 5-6)',
-    special_ability_description : 'This wyvern exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a {{SAVE_DC}} Dexterity saving throw, taking lightning damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
+    special_ability_description : 'This wyvern exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Dexterity saving throw, taking lightning damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
     special_ability_type: 'action'
   },
   {
