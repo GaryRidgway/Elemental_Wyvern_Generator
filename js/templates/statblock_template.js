@@ -36,6 +36,7 @@ function statblock_create(wyvernTypeData) {
     'darkvision 60ft.',
     'passive Perception ' + (mod(w.Stats.WIS) + 10 + ((w.skills['Perception'] != undefined) ? parseInt(w.proficiency) : 0))
   ];
+  w.saveDC = 8 + mod(w.Stats.STR) + parseInt(w.proficiency);
 
   var statblock_template = '\
   <div class="stat-block wide">\
@@ -163,6 +164,8 @@ function statblock_create(wyvernTypeData) {
     <hr class="orange-border bottom" />\
   </div> <!-- stat block -->\
   ';
+
+  statblock_template = replace_pattern_in_string(statblock_template, '{{SAVE_DC}}', 'DC ' + w.saveDC);
 
   return statblock_template;
 }
