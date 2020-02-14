@@ -1,5 +1,5 @@
 function wyvern_type_template() {
-    let wyvern = w.wyvern.wyvernTypeData;
+    let wyvern = w.wyvern;
     let wyvern_type_text = "";
     let type = wyvern.type;
     let description = wyvern.description;

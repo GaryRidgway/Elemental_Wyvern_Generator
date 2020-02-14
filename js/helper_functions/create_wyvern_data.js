@@ -1,7 +1,7 @@
 var w;
 
 function create_wyvern_data(wyvernData) {
-    let wyvernTypeData = wyvernData.wyvernTypeData;
+    let wyvernTypeData = wyvernData;
     // Create a Wyvern Variable Dictionary to hold the wyvern Data.
     w = {};
     w.wyvern = wyvernData;
