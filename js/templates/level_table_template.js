@@ -1,4 +1,7 @@
-function create_table(table_array, wyvern_type) {
+function level_table_template() {
+  let wyvern_type = w.wyvern.wyvernTypeData.type;
+  let table_array = w.wyvern.wyvernTypeData.level_chart;
+  
   let table_html = "\
     <div class='level-table-container'>\
       <div class='corner top-left'><div class='inner-curve'></div></div>\

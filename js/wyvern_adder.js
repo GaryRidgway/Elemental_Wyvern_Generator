@@ -13,13 +13,15 @@ function add_wyvern() {
     create_wyvern_data(wyvern);
   }
 
-  let mutations = mutations_template();
-  let statblock = statblock_template();
+  let wyvern_type = wyvern_type_template()
+  let mutations   = mutations_template();
+  let statblock   = statblock_template();
+  let level_table = level_table_template();
 
-  body.innerHTML = w.wyvern.wyvernTypeText
+  body.innerHTML = wyvern_type
                  + '<div class="flex-half">'
                  + statblock
-                 + w.wyvern.levelTable
+                 + level_table
                  + '</div>'
                  + mutations;
 }

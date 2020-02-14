@@ -1,7 +1,5 @@
 function mutations_template() {
     let mutations = w.mutations;
-    cl(mutations);
-
     let wyvern_trait_text = "<div class='element-agnostic-mutations'>";
 
     for (i = 0; i < mutations.length; i++) {
