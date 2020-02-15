@@ -71,19 +71,19 @@ var mutations = [
   [
     "Ocular Acuity",
     "This wyvern has grown four eyes in straight lines on each side of its head to replace the two a wyvern would normally have. These eight eyes have no pupils to be seen, and are instead one solid color of your choosing. These eyes, while useful for taking in their surroundings, often give wyverns a menacing appearance.",
-    "This wyvern gains proficiency in Perception and Intimidation.",
+    "This wyvern gains expertise in Perception and proficiency in Intimidation.",
     base_percentage
   ],
   [
     "Swept Wings",
     "Variations in wing styles reflect the amount of drag and stability imposed on the wyverns aerobatic features. This wyvern has Swept Wings, granting them a smaller set of stabilizer wings on their back legs, allowing them to be more agile during flight.",
-    "This wyvern has increases its Dexterity by 1 to a maximum of 20, and its AC by 1.",
+    "This wyvern has increases its Dexterity by 1 to a maximum of 20, and increases its AC by 1.",
     base_percentage
   ],
   [
     "Titanous Form",
     "This wyvern will have increased metabolisim and muscle density in their youth, which might cause it to reach a titanous size by adulthood, often growing up to twice as large as a normal wyvern. This, while it makes them proportionally slower in flight and less aerobatic compared to their smaller kin, gives them incredible strength and an astoundingly fortified constitution.",
-    "This wyvern doubles in size and now has the Size Category of 'Huge'. Its AC is decreased by 3, and its Dexterity is decreased by 3. Additionally, its Strength, Maximum Strength, Constitution, and Maximum Constitution increase by 3 to maximums of 20.",
+    "This wyvern doubles in size and now has the Size Category of 'Huge'. Its AC is decreased by 3, and its Dexterity is decreased by 3. Additionally, its Strength, Maximum Strength, Constitution, and Maximum Constitution increase by 3",
     base_percentage
   ],
   [
