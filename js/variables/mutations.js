@@ -1,7 +1,32 @@
 // Each mutation has a name, description, effect, and percentage chance of mutating.
-var base_percentage = 10;
+var base_percentage = 0;
 
 var mutations = [
+  [
+    "Example Mutation",
+    "Example Description",
+    "Example Changes",
+    100,
+    {
+      abilities: [],
+      ac: -2,
+      profs: [],
+      scores: {
+        STR: [2, true],
+        DEX: [20, false],
+        CON: [0, true],
+        INT: [0, true],
+        WIS: [0, true],
+        CHA: [0, true]
+      },
+      size: '',
+      speed : {
+        fly : '',
+        climb : '',
+        burrow : ''
+      }
+    }
+  ],
   [
     "Adaptive Carapace",
     "Sometimes, an incredible ability to manipulate appearance is present in some wyverns, with the skin beneath their scales having the ability to mottle its color and texture. This wyvern has the ability to camouflage in to various environments such as mountain hills, grassy plains, or vast deserts.",

@@ -13,7 +13,7 @@ function statblock_template() {
       <div class="top-stats">\
         <div class="property-line first">\
           <h4>Armor Class</h4>\
-          <p>' + w.AC + ' (13 + Dexterity modifier) (natural armor)</p>\
+          <p>' + (w.AC + mod(w.Stats.DEX)) + ' (' + w.AC + ' + Dexterity modifier) (natural armor)</p>\
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Hit Points</h4>\

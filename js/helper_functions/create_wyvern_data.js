@@ -16,7 +16,7 @@ function create_wyvern_data(wyvernData) {
     };
     w.Type = wyvernTypeData.type;
     w.Size = 'Large';
-    w.AC = mod(w.Stats.DEX) + 13;
+    w.AC = 13;
     w.Speed = {
     walk      : 20   ,
     fly       : 80   ,
@@ -43,4 +43,6 @@ function create_wyvern_data(wyvernData) {
     w.saveDC = 8 + mod(w.Stats.STR) + parseInt(w.proficiency);
 
     w.mutations = EAM_randomize();
+
+    mutation_modifier(w.mutations);
 }
