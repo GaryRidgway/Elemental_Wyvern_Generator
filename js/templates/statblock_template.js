@@ -90,7 +90,7 @@ function statblock_template() {
       if (w.special_ability_type == 'ability') {
         statblock_template +='\
           <div class="property-block">\
-            <h4>' + w.special_ability_title + '</h4>\
+            <h4>' + w.special_ability_title + '.</h4>\
             <p>' + w.special_ability_description + '</p>\
           </div> <!-- property block -->'
       }
@@ -114,7 +114,7 @@ function statblock_template() {
         if (w.special_ability_type == 'action') {
           statblock_template +='\
             <div class="property-block">\
-              <h4>' + w.special_ability_title + '</h4>\
+              <h4>' + w.special_ability_title + '.</h4>\
               <p>' + w.special_ability_description + '</p>\
             </div> <!-- property block -->'
         }
