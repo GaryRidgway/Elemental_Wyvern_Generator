@@ -34,6 +34,7 @@ function create_wyvern_data(wyvernData) {
     w.skills = {
     'Perception' : ['WIS', false]
     };
+    w.abilities = {};
     w.senses = [
     'darkvision 60ft.',
     'passive Perception ' + (mod(w.Stats.WIS) + 10 + ((w.skills['Perception'] != undefined) ? parseInt(w.proficiency) : 0))

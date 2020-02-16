@@ -95,6 +95,9 @@ function statblock_template() {
           </div> <!-- property block -->'
       }
 
+      statblock_template += ability_string_builder(w.abilities);
+
+
       statblock_template +='\
     </div> <!-- section left -->\
     <div class="section-right">\

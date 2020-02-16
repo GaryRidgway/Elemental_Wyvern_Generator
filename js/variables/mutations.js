@@ -8,7 +8,10 @@ var mutations = [
     "Example Changes",
     100,
     {
-      abilities: [],
+      abilities: {
+        "Ability 1": "Hello, I am an ability.",
+        "Ability 2": "I am the second ability!",
+      },
       ac: -2,
       profs: {
         'Intimidation': ['CHA', false],

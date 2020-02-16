@@ -6,7 +6,17 @@ function mutation_modifier(mutations) {
     let option = mod_keys[i];
     switch (option) {
       case "abilities":
-        // code block
+        let abilities = mods[option];
+        let ability_keys = Object.keys(mods[option]);
+        for (let j = 0; j < ability_keys.length; j++) {
+          const ability = ability_keys[j];
+          if (w.abilities[ability]) {
+            w.abilities[ability] += abilities[ability];
+          }
+          else {
+            w.abilities[ability] = abilities[ability];
+          }
+        }
         break;
 
       case "ac":
