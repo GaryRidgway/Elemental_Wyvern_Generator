@@ -17,11 +17,9 @@ function create_wyvern_data(wyvernData) {
     w.Type = wyvernTypeData.type;
     w.Size = 'Large';
     w.AC = 13;
-    w.Speed = {
-    walk      : 20   ,
-    fly       : 80   ,
-    flyPrefix : 'fly',
-    extra     : ''
+    w.Speeds = {
+        walk : 20,
+        fly  : 80,
     };
     // Breath Weapon Damage Type.
     w.BWDT = wyvernTypeData.breath_weapon_damage_type;

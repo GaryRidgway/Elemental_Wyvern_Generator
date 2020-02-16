@@ -21,7 +21,7 @@ function statblock_template() {
         </div> <!-- property line -->\
         <div class="property-line last">\
           <h4>Speed</h4>\
-          <p>' + w.Speed.walk + 'ft., ' + w.Speed.flyPrefix + ' ' + w.Speed.fly + w.Speed.extra + 'ft.</p>\
+          <p>' + speed_string_builder(w.Speeds) + '</p>\
         </div> <!-- property line -->\
         <svg height="5" width="100%" class="tapered-rule">\
         <polyline points="0,0 400,2.5 0,5"></polyline>\

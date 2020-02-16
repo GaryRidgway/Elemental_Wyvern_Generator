@@ -24,15 +24,7 @@ function mutation_modifier(mutations) {
           else {
             w.skills[prof] = profs[prof];
           }
-
         }
-
-
-
-
-
-
-
         break;
 
       case "scores":
