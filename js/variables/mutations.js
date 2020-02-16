@@ -25,7 +25,7 @@ var mutations = [
       },
       size: 'Huge',
       speed : {
-        fly : 0,
+        fly : -20,
         climb : 0,
         burrow : 0
       }

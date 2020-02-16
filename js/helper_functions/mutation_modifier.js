@@ -68,7 +68,17 @@ function mutation_modifier(mutations) {
         break;
 
       case "speed":
-        // code block
+        let speeds = mods[option];
+        let speed_keys = Object.keys(mods[option]);
+        for (let j = 0; j < speed_keys.length; j++) {
+          const speed = speed_keys[j];
+          if (w.Speeds[speed]) {
+            w.Speeds[speed] += speeds[speed];
+          }
+          else {
+            w.Speeds[speed] = speeds[speed];
+          }
+        }
         break;
 
       default:

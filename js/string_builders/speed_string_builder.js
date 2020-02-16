@@ -4,7 +4,6 @@ function speed_string_builder(speeds) {
 
   for (let i = 0; i < speeds_keys.length; i++) {
     const speed = speeds_keys[i];
-    cl(speed);
     if (speed == 'walk') {
       speed_string += speeds[speed] + ' ft.';
     }
