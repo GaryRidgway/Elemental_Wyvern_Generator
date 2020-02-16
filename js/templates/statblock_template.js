@@ -17,7 +17,7 @@ function statblock_template() {
         </div> <!-- property line -->\
         <div class="property-line">\
           <h4>Hit Points</h4>\
-          <p>30</p>\
+          <p>' + w.hp + '</p>\
         </div> <!-- property line -->\
         <div class="property-line last">\
           <h4>Speed</h4>\

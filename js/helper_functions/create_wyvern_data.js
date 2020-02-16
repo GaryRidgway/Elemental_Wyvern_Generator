@@ -44,4 +44,6 @@ function create_wyvern_data(wyvernData) {
     w.mutations = EAM_randomize();
 
     mutation_modifier(w.mutations);
+
+    w.hp = mod(w.Stats.CON) * 15;
 }
