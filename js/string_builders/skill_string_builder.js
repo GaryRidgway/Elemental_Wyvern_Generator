@@ -9,8 +9,9 @@ function skill_string_builder(skill_obj, proficiency) {
 
   for (i = 0; i < keys.length; i++) {
     let skill_data = skill_obj[keys[i]];
-    let expertise = (skill_obj[keys[i]][1]) ? profInt*2 : profInt;
-    let final_modifier_string = modDisplay(mod(skill_obj[keys[i]][0]) + expertise);
+    let expertise = (skill_data[1]) ? profInt*2 : profInt;
+    let skill_mod = mod(w.Stats[skill_data[0]]);
+    let final_modifier_string = modDisplay(skill_mod + expertise);
 
     skill_string += (keys[i] + ' ' +  final_modifier_string);
 

@@ -10,16 +10,20 @@ var mutations = [
     {
       abilities: [],
       ac: -2,
-      profs: [],
+      profs: {
+        'Intimidation': ['CHA', false],
+        'Persuasion': ['CHA', false],
+        'Perception': ['WIS', true]
+      },
       scores: {
         STR: [2, true],
         DEX: [20, false],
         CON: [0, true],
         INT: [0, true],
-        WIS: [0, true],
+        WIS: [4, true],
         CHA: [0, true]
       },
-      size: '',
+      size: 'Huge',
       speed : {
         fly : '',
         climb : '',

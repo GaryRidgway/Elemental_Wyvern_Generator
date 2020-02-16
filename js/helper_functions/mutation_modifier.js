@@ -14,7 +14,25 @@ function mutation_modifier(mutations) {
         break;
 
       case "profs":
-        // code block
+        let profs = mods[option];
+        let prof_keys = Object.keys(profs);
+
+        for (let j = 0; j < prof_keys.length; j++) {
+          let prof = prof_keys[j];
+          // If the skill is already there and there is no expertise.
+          if (w.skills[prof] && !profs[prof][1]) { /* Do nothing. */}
+          else {
+            w.skills[prof] = profs[prof];
+          }
+
+        }
+
+
+
+
+
+
+
         break;
 
       case "scores":
@@ -54,7 +72,7 @@ function mutation_modifier(mutations) {
         break;
 
       case "size":
-        // code block
+        w.Size = mods[option];
         break;
 
       case "speed":

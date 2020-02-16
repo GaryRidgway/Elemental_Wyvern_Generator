@@ -34,7 +34,7 @@ function create_wyvern_data(wyvernData) {
     ];
     // Each skill has the skill value and whether it has expertise.
     w.skills = {
-    'Perception' : [w.Stats.WIS, false]
+    'Perception' : ['WIS', false]
     };
     w.senses = [
     'darkvision 60ft.',
