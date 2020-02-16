@@ -8,7 +8,10 @@ var wyvern_types = [
     breath_weapon_damage_type : 'fire',
     special_ability_title : 'Fire Breath (Recharge 5-6)',
     special_ability_description : 'This wyvern exhales fire in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Dexterity saving throw, taking fire damage equal to the amount determined by the Breath Weapon column of the Fire Wyvern Level Table on a failed save, or half as much damage on a successful one.',
-    special_ability_type: 'action'
+    special_ability_type: 'action',
+    excluded_mutations: [
+      "Rock Wyvern Basic"
+    ]
   },
   {
     type: "ice",
@@ -17,7 +20,10 @@ var wyvern_types = [
     breath_weapon_damage_type : 'cold',
     special_ability_title : 'Cold Breath (Recharge 5-6)',
     special_ability_description : 'This wyvern exhales an icy blast in a 30-foot cone. Each creature in that area must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw, taking cold damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
-    special_ability_type: 'action'
+    special_ability_type: 'action',
+    excluded_mutations: [
+      "Rock Wyvern Basic"
+    ]
   },
   {
     type: "death",
@@ -26,7 +32,10 @@ var wyvern_types = [
     breath_weapon_damage_type : 'necrotic',
     special_ability_title : 'Essence Siphon (Recharge 5-6)',
     special_ability_description : 'This wyvern chooses a humanoid that it can see within 60 feet. The target must succeed on a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw, taking necrotic damage equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table on a failed save, or half as much damage on a successful one. This wyvern regains hit points equal to half the amount of necrotic damage dealt. The target must then make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Constitution saving throw at the end of each of its turns. Until the target succeeds, they take the same amount of necrotic damage again each turn and this wyvern regains hit points equal to half of that amount.',
-    special_ability_type: 'action'
+    special_ability_type: 'action',
+    excluded_mutations: [
+      "Rock Wyvern Basic"
+    ]
   },
   {
     type: "lighning",
@@ -35,7 +44,10 @@ var wyvern_types = [
     breath_weapon_damage_type : 'lightning',
     special_ability_title : 'Lightning Breath (Recharge 5-6)',
     special_ability_description : 'This wyvern exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a {{SAVE_DC}} (8 + proficiency bonus + Strength modifier) Dexterity saving throw, taking lightning damage equal to the amount determined by the Breath Weapon column of the Lightning Wyvern Level Table on a failed save, or half as much damage on a successful one.',
-    special_ability_type: 'action'
+    special_ability_type: 'action',
+    excluded_mutations: [
+      "Rock Wyvern Basic"
+    ]
   },
   {
     type: "rock",
@@ -44,6 +56,12 @@ var wyvern_types = [
     breath_weapon_damage_type : null,
     special_ability_title : 'Non-Magical Damage Reduction',
     special_ability_description : 'Bludgeoning, piercing, and slashing damage that this wyvern takes from non-magical weapons is reduced by the amount shown in the Non-Magical Damage Reduction column of the Rock Wyvern Level Table.',
-    special_ability_type: 'ability'
+    special_ability_type: 'ability',
+    excluded_mutations : [
+      "Colossal Wingspan",
+      "Delta Wings",
+      "Glauceal Wings",
+      "Swept Wings"
+    ]
   }
 ];

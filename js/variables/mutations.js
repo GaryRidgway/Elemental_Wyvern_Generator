@@ -192,6 +192,17 @@ var mutations = [
     }
   ],
   [
+    "Rock Wyvern Basic",
+    "",
+    "",
+    100,
+    {
+      speed: {
+        fly: -9999,
+      }
+    }
+  ],
+  [
     "Swept Wings",
     "Variations in wing styles reflect the amount of drag and stability imposed on the wyverns aerobatic features. This wyvern has Swept Wings, granting them a smaller set of stabilizer wings on their back legs, allowing them to be more agile during flight.",
     "This wyvern has increases its Dexterity by 1 to a maximum of 20, and increases its AC by 1.",
