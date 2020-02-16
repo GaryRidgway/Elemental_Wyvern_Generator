@@ -28,6 +28,13 @@ function mutation_modifier(mutations) {
             w.AC += mods[option];
             break;
 
+          case "breath_weapon":
+            cl('hola');
+            let new_bw = Object.keys(mods[option])[0];
+            w.special_ability_title = new_bw;
+            w.special_ability_description = mods[option][new_bw];
+            break;
+
           case "profs":
             let profs = mods[option];
             let prof_keys = Object.keys(profs);

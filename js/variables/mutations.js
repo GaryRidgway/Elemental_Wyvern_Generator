@@ -115,17 +115,17 @@ var mutations = [
       }
     }
   ],
-  [
-    "Bomb Door",
-    "Bomb Door",
-    "",
-    1,
-    {
-      abilities: {
-        "Bomb Door": "Bomb Door.",
-      },
-    }
-  ],
+  // [
+  //   "Bomb Door",
+  //   "Bomb Door",
+  //   "",
+  //   1,
+  //   {
+  //     abilities: {
+  //       "Bomb Door": "Bomb Door.",
+  //     },
+  //   }
+  // ],
   [
     "Colossal Wingspan",
     "Some wyverns have mutations that expand their wings to those of colossal proportions. This wyvern has been bestowed with such a mutation, and as such has a wingspan twice as large as a normal wyvern.",
@@ -192,6 +192,31 @@ var mutations = [
     }
   ],
   [
+    "Blessed Essence",
+    "This wyvern appears from birth as a pure illustrious white with variations of black mottling infrequently dotting its wing membranes. Its normally bloodshot and sickly yellow eyes appear instead as cloudy and gray with bright red irises. Its general demeanor remains almost the same, with the exception of a more transparent respect and gentle affection given to riders who have earned its trust.",
+    "This wyvern's aura now radiates healing energy. It loses its Essence Siphon and instead gains a Blessed Essence. This wyvern may now, as an action, choose to heal 1 target within 30 feet. The target regains a number of hit points equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table.",
+    base_percentage,
+    {
+      abilities: {
+        "Blessed Essence": "This wyvern loses its Essence Siphon and instead gains a Blessed Essence."
+      },
+      breath_weapon : {
+        'Blessed Essence': "A willing creature of this wyvern's choice that it can see within 30 ft regains a number of hit points equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table. This has no effect on undead or constructs."
+      }
+    }
+  ],
+  [
+    "Magmatic Ejection",
+    "This wyvern has an incredibly large barreled chest capable of storing molten rock. This wyvern might use this molten rock for anything from furnishing its lair to supplementing its breath attack.",
+    "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once, or it can consume a chestful of magma from a viable source as an action to recharge this ability.",
+    base_percentage,
+    {
+      abilities: {
+        "Magmatic Ejection": "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once, or it can consume a chestful of magma from a viable source as an action to recharge this ability."
+      }
+    }
+  ],
+  [
     "Mosasauric Jaws",
     "This wyvern's face is abnormally elongated to contain a more robust skeletal structure. Inside its mouth is a secondary upper jaw with serrated and heavily angled teeth. When this wyvern bites down, the inner jaw is capable of raking flesh off of any creature unfortunate to be caught in its maw.",
     "This wyvern's bite attack deals an additional 7 (2d6) piercing damage on a hit.",
@@ -225,6 +250,17 @@ var mutations = [
       profs: {
         'Intimidation': ['CHA', false],
         'Perception': ['WIS', true]
+      },
+    }
+  ],
+  [
+    "Resonant Quakes",
+    "This wyvern's attunement with the earth's resonant frequency allows it to manipulate the naural harmonics of the world around it. By concentrating, it can cause the ground to begin shaking and cracking ",
+    "This wyvern may, as an Action, violently shake the ground in a 30ft radius centered on itself for 1 minute. At the start of each of their turns, each creature in this radius must make a Dexterity saving throw. On a failed save, an affected target's speed is halved, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.",
+    base_percentage,
+    {
+      abilities: {
+        "Resonant Quakes": "This wyvern may, as an Action, violently shake the ground in a 30ft radius centered on itself for 1 minute. At the start of each of their turns, each creature in this radius must make a {{SAVE_DC}} Dexterity saving throw. On a failed save, an affected target's speed is halved, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted."
       },
     }
   ],
