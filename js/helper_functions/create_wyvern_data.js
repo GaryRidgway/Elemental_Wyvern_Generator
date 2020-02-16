@@ -35,15 +35,15 @@ function create_wyvern_data(wyvernData) {
     'Perception' : ['WIS', false]
     };
     w.abilities = {};
-    w.senses = [
-    'darkvision 60ft.',
-    'passive Perception ' + (mod(w.Stats.WIS) + 10 + ((w.skills['Perception'] != undefined) ? parseInt(w.proficiency) : 0))
-    ];
-    w.saveDC = 8 + mod(w.Stats.STR) + parseInt(w.proficiency);
+    w.senses = {
+        'darkvision': [60, 'ft.'],
+        'passive Perception': [(mod(w.Stats.WIS) + 10 + ((w.skills['Perception'] != undefined) ? parseInt(w.proficiency) : 0)), '']
+    }
 
     w.mutations = EAM_randomize();
 
     mutation_modifier(w.mutations);
 
     w.hp = mod(w.Stats.CON) * 15;
+    w.saveDC = 8 + mod(w.Stats.STR) + parseInt(w.proficiency);
 }

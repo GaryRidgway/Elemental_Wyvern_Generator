@@ -9,10 +9,9 @@ function speed_string_builder(speeds) {
         speed_string += speeds[speed] + ' ft.';
       }
       else {
+        speed_string += ((i != speeds_keys.length) ? ', ' : '');
         speed_string += speed + ' ' + speeds[speed] + ' ft.';
       }
-
-      speed_string += ((i != speeds_keys.length - 1) ? ', ' : '');
     }
   }
 

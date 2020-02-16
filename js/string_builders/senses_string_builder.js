@@ -1,11 +1,14 @@
-function senses_string_builder(sense_array) {
+function senses_string_builder(senses) {
+  let senses_keys = Object.keys(senses);
   let sense_string = '';
 
-  for (i = 0; i < sense_array.length; i++) {
-    sense_string += sense_array[i];
-
-    if (i != sense_array.length-1) {
-      sense_string += ", ";
+  for (let i = 0; i < senses_keys.length; i++) {
+    const sense = senses_keys[i];
+    if (senses[sense][0] > 0) {
+      if (i != 0 && senses[senses_keys[i -1]][0] > 0) {
+        sense_string += ((i != senses_keys.length) ? ', ' : '');
+      }
+      sense_string += sense + ' ' + senses[sense][0] + ' ' + senses[sense][1];
     }
   }
 

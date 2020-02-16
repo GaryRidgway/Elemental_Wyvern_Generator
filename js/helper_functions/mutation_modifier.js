@@ -78,6 +78,20 @@ function mutation_modifier(mutations) {
             }
             break;
 
+          case "senses":
+            let senses = mods[option];
+            let sense_keys = Object.keys(mods[option]);
+            for (let j = 0; j < sense_keys.length; j++) {
+              const sense = sense_keys[j];
+              if (w.senses[sense]) {
+                w.senses[sense][0] += senses[sense][0];
+              }
+              else {
+                w.senses[sense] = senses[sense];
+              }
+            }
+            break;
+
           case "size":
             w.Size = mods[option];
             break;

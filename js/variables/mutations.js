@@ -1,12 +1,12 @@
 // Each mutation has a name, description, effect, and percentage chance of mutating.
-var base_percentage = 10;
+var base_percentage = 0;
 
 var mutations = [
   [
     "Example Mutation",
     "Example Description",
     "Example Changes",
-    0,
+    100,
     {
       abilities: {
         "Ability 1": "Hello, I am an ability.",
@@ -25,6 +25,10 @@ var mutations = [
         INT: [0, true],
         WIS: [4, true],
         CHA: [0, true]
+      },
+      senses: {
+        'sense': [60, 'dogs'],
+        'darkvision': [-9999, 'dogs']
       },
       size: 'Huge',
       speed : {
@@ -195,7 +199,7 @@ var mutations = [
     "Rock Wyvern Basic",
     "",
     "",
-    100,
+    base_percentage/base_percentage,
     {
       speed: {
         fly: -9999,
