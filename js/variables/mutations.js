@@ -116,6 +116,17 @@ var mutations = [
     }
   ],
   [
+    "Bomb Door",
+    "Bomb Door",
+    "",
+    1,
+    {
+      abilities: {
+        "Bomb Door": "Bomb Door.",
+      },
+    }
+  ],
+  [
     "Colossal Wingspan",
     "Some wyverns have mutations that expand their wings to those of colossal proportions. This wyvern has been bestowed with such a mutation, and as such has a wingspan twice as large as a normal wyvern.",
     "This wyvern counts as one size larger when determining its wingspan. Additionally, its Flying speed is increased by 40.",
@@ -170,6 +181,28 @@ var mutations = [
     }
   ],
   [
+    "Igneous Scales",
+    "This wyvern's scales are unnaturally colored and textured, almost uniformly maroon with black shards at their edges. When this wyvern is exposed to high amounts of heat, the glossy sheen of the igneous scales deepens to a dull black as they they absorb and radiate this energy.",
+    "This wyvern increases its AC by 2 when its current HP is over 50% of its maximum HP, rounded down. Additionally, this wyvern heals for 1/4 of any fire damage it takes when it is below 50% of its maximum HP, rounded down.",
+    base_percentage,
+    {
+      abilities: {
+        "Igneous Scales": "This wyvern increases its AC by 2 when its current HP is over 50% of its maximum HP, rounded down. Additionally, this wyvern heals for 1/4 of any fire damage it takes when it is below 50% of its maximum HP, rounded down."
+      },
+    }
+  ],
+  [
+    "Mosasauric Jaws",
+    "This wyvern's face is abnormally elongated to contain a more robust skeletal structure. Inside its mouth is a secondary upper jaw with serrated and heavily angled teeth. When this wyvern bites down, the inner jaw is capable of raking flesh off of any creature unfortunate to be caught in its maw.",
+    "This wyvern's bite attack deals an additional 7 (2d6) piercing damage on a hit.",
+    base_percentage,
+    {
+      abilities: {
+        "Mosasauric Jaws": "This wyvern's bite attack deals an additional 7 (2d6) piercing damage on a hit."
+      },
+    }
+  ],
+  [
     "Mydo'Kin Scales",
     "Additional muscle and scale growth can lead to imposing wyvern mutations that make them much more agile in the air. Several of the scales on this wyvern grow to the size of tower shields, and may be raised swiftly to create large amounts of drag when flying. This ability can be used to swiftly maneuver while flying, allowing for acute directional changes. Additionally, these scales can be rasised simply for their imposing size and grandeur, creating an incredibly intimidating presence.",
     "This wyvern gains proficiency in Intimidation. Additionally, it gains the ability to take the 'Dodge' action as a bonus action twice per day with this trait and regains all uses of this ability when it finishes a long rest.",
@@ -209,6 +242,17 @@ var mutations = [
       speed: {
         fly: -9999,
         burrow: 80
+      }
+    }
+  ],
+  [
+    "Subdermal Magma",
+    "Beneath the surface of this wyvern's skin emanates a bright and powerful orange light from between its scales. Upon close inspection, this light appears dynamic as subdermal magma flows beneath its shard like scales. The viscous lava makes this wyvern's skin almost unbearable to touch, and experienced riders use incredibly thick leather saddles to protect themselves from exposure.",
+    "The natural glow of this wyvern's subdermal magma sheds bright light in a 10 foot radius and dim light for an additional 10 feet. If this wyvern takes piercing or slashing damage from a melee attack, glowing magma pours from the wound onto its attacker. The attacker takes 1d6 fire damage from this effect.",
+    base_percentage,
+    {
+      abilities: {
+        "Subdermal Magma": "This wyvern sheds bright light in a 10 foot radius and dim light for an additional 10 feet. If this wyvern takes piercing or slashing damage from a melee attack, glowing magma pours from the wound onto its attacker. The attacker takes 1d6 fire damage from this effect.",
       }
     }
   ],
