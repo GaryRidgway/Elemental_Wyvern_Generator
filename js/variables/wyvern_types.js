@@ -86,7 +86,8 @@ var wyvern_types = [
       "Swept Wings",
       "Blessed Essence",
       "Mane of Ice",
-      "Ionic Warp"
+      "Ionic Warp",
+      "Ocular Acuity"
     ]
   }
 ];
