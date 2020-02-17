@@ -12,7 +12,9 @@ var wyvern_types = [
     excluded_mutations: [
       "Rock Wyvern Basic",
       "Blessed Essence",
-      "Resonant Quakes"
+      "Resonant Quakes",
+      "Mane of Ice",
+      "Ionic Warp"
     ]
   },
   {
@@ -29,7 +31,8 @@ var wyvern_types = [
       "Igneous Scales",
       "Blessed Essence",
       "Magmatic Ejection",
-      "Resonant Quakes"
+      "Resonant Quakes",
+      "Ionic Warp"
     ]
   },
   {
@@ -45,7 +48,9 @@ var wyvern_types = [
       "Subdermal Magma",
       "Igneous Scales",
       "Magmatic Ejection",
-      "Resonant Quakes"
+      "Resonant Quakes",
+      "Mane of Ice",
+      "Ionic Warp"
     ]
   },
   {
@@ -62,7 +67,8 @@ var wyvern_types = [
       "Igneous Scales",
       "Blessed Essence",
       "Magmatic Ejection",
-      "Resonant Quakes"
+      "Resonant Quakes",
+      "Mane of Ice"
     ]
   },
   {
@@ -78,7 +84,9 @@ var wyvern_types = [
       "Delta Wings",
       "Glauceal Wings",
       "Swept Wings",
-      "Blessed Essence"
+      "Blessed Essence",
+      "Mane of Ice",
+      "Ionic Warp"
     ]
   }
 ];

@@ -79,7 +79,7 @@ var mutations = [
   ],
   [
     "Arcane Skeleton",
-    "This wyvern has retained some of the magics used to incubate it. Its skeleton has been enhanced, and is considered magical.",
+    "This wyvern has retained some of the magics used to incubate it, and its bones are now comprised of obsidian glass. Its skeleton has been enhanced, and is considered magical.",
     "Any melee attack made by this wyvern is considered magical for the purposes of overcoming resistances.",
     base_percentage,
     {
@@ -206,13 +206,35 @@ var mutations = [
     }
   ],
   [
-    "Magmatic Ejection",
-    "This wyvern has an incredibly large barreled chest capable of storing molten rock. This wyvern might use this molten rock for anything from furnishing its lair to supplementing its breath attack.",
-    "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once, or it can consume a chestful of magma from a viable source as an action to recharge this ability.",
+    "Ionic Warp",
+    "This wyvern is briefly surrounded by bolts of lightning that lance and strike violently outward towards a signle point. Instantaneously, it reappears as spectacular spears of electricity arc between its previous location and the point it has chosen.",
+    "This wyvern is able to teleport up to 80 feet to an unoccupied point it can see as a bonus action. It may do so once per day with this trait and regains all uses of this ability on a long rest.",
     base_percentage,
     {
       abilities: {
-        "Magmatic Ejection": "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once, or it can consume a chestful of magma from a viable source as an action to recharge this ability."
+        "Ionic Warp": "This wyvern is able to teleport up to 80 feet to an unoccupied point it can see as a bonus action. It may do so once per day with this trait and regains all uses of this ability on a long rest."
+      }
+    }
+  ],
+  [
+    "Magmatic Ejection",
+    "This wyvern has an incredibly large barreled chest capable of storing molten rock. This wyvern might use this molten rock for anything from furnishing its lair to supplementing its breath attack.",
+    "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once per day with this trait and regains all uses of this ability when it finishes a long rest. Alternatively, it can consume a chestful of magma from a viable source as an action to recharge this ability.",
+    base_percentage,
+    {
+      abilities: {
+        "Magmatic Ejection": "This wyvern can use stored magma in this chest cavity as an Action to spew magma at a point they can see within a 30 foot range. Any creatures within a 10 foot radius around this point must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save or half as much on a success. The area around this point becomes difficult terrain for 1 minute, and any creature who starts its turn there takes 3 (1d6) fire damage. This wyvern generates enough magma a day to use this ability once per day with this trait and regains all uses of this ability when it finishes a long rest. Alternatively, it can consume a chestful of magma from a viable source as an action to recharge this ability."
+      }
+    }
+  ],
+  [
+    "Mane of Ice",
+    "This wyvern has a large crystalline mane of pointed shards that lance outward from the back of its skull and extend down the spine. Its skin is semi-translucent, revealing its internal blue-hued muscle structure and off-white skeleton beneath its frozen carapice.",
+    "This wyvern's naturally spiked hide protects it from being Grappled, imposing disadvantage on any Strength (Athletics) check to restrain it. Additionally, this wyvern may propel its spines outward at high velocity as an Action once per day. Any creatures within a 30 foot radius around this wyvern must make a Dexterity saving throw, taking 14 (4d6) cold damage on a failed save or half as much on a success. This wyvern regains all uses of this ability when it finishes a long rest.",
+    base_percentage,
+    {
+      abilities: {
+        "Mane of Ice": "This wyvern's naturally spiked hide protects it from being Grappled, imposing disadvantage on any Strength (Athletics) check to restrain it. Additionally, this wyvern may propel its spines outward at high velocity as an Action once per day. Any creatures within a 30 foot radius around this wyvern must make a {{SAVE_DC}} Dexterity saving throw, taking 14 (4d6) cold damage on a failed save or half as much on a success. This wyvern regains all uses of this ability when it finishes a long rest."
       }
     }
   ],
