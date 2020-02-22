@@ -4,4 +4,4 @@ make equation to allow for certain rolls to be higher on wyverns with less optio
 
 add info for the tab, icon, name, etc.
 
-add senses change
+igneous scales and magmatic ejection should grant fire immunity

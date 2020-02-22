@@ -201,7 +201,7 @@ var mutations = [
         "Blessed Essence": "This wyvern loses its Essence Siphon and instead gains a Blessed Essence."
       },
       breath_weapon : {
-        'Blessed Essence': "A willing creature of this wyvern's choice that it can see within 30 ft regains a number of hit points equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table. This has no effect on undead or constructs."
+        'Blessed Essence (Recharge 5-6)': "A willing creature of this wyvern's choice that it can see within 30 ft regains a number of hit points equal to the amount determined by the Essence Siphon column of the Death Wyvern Level Table. This has no effect on undead or constructs."
       }
     }
   ],
