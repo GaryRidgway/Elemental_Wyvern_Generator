@@ -54,7 +54,7 @@ var wyvern_types = [
     ]
   },
   {
-    type: "lighning",
+    type: "ligthning",
     description: "Lightning Wyverns often occur in shades of blue or purple, often with jagged streaks of white that break through these colors in erratic ways. Their wing membrane is often blinding white, but a myriad of light blues and yellows have also been seen. They have narrow, triangular faces with jagged cheekbones and large eyes. The lightning wyvern is the only wyvern to have small tendrils that protrude from the back of their skull on either side, and it is said that these are the parts of its body that conducts electricity. Some have even fabled that these float through the air and crackle with electricity when the wyvern is in the presence of vicious storms. Lightning wyverns can be extremely anxious creatures, or extremely calm creatures. This seems to always be tied to how far away, or close to the ocean it is, preferring the raging waters and its myriad of storms.",
     level_chart: lightning_wyvern_level_chart,
     breath_weapon_damage_type : 'lightning',
