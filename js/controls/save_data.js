@@ -11,7 +11,7 @@ function saveState(name) {
     return;
   }
 
-  let wyvern = display.innerHTML;
+  let wyvern = wyvern_display.innerHTML;
 
   savedContent[name] = wyvern;
 

@@ -27,3 +27,9 @@ function replace_pattern_in_string(STRING, PATTERN, VALUE) {
   let regex_pattern = new RegExp(PATTERN, "g");
   return STRING.replace(regex_pattern, VALUE);
 }
+
+// Reload saved wyvern names.
+
+function load_saved_wyvern_names() {
+  saved_wyerns = Object.keys(JSON.parse(localStorage.getItem('EWG-DATA')));
+}

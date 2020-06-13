@@ -19,7 +19,7 @@ function loadSaveState(name, data = 'EWG-DATA') {
     }
 
     else {
-      display.innerHTML = data[name];
+      wyvern_display.innerHTML = data[name];
     }
   }
 
