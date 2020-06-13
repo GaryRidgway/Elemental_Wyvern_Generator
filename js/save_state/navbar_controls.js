@@ -6,6 +6,8 @@ var load_modal;
 var load_btn;
 var close_load_modal;
 
+var reload;
+
 document.addEventListener("DOMContentLoaded", function () {
 
   // Get the modal
@@ -39,6 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // When the user clicks on <span> (x), close the modal
   close_load_modal.onclick = function () {
     load_modal.style.display = "none";
+  }
+
+  // Get the reload button.
+  reload_btn = document.getElementById("reload-button");
+
+  // When the user clicks on the button, reload the wyvern.
+  reload_btn.onclick = function () {
+    add_wyvern();
   }
 
   // When the user clicks anywhere outside of the modal, close it

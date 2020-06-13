@@ -7,13 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function add_wyvern() {
+function add_wyvern(reload = false) {
   wyvern_display = document.querySelector('body #wyvern-display');
 
-  if (!w){
-    let wyvern    = WT_randomize();
-    create_wyvern_data(wyvern);
-  }
+  let wyvern    = WT_randomize();
+  create_wyvern_data(wyvern);
 
   let wyvern_type = wyvern_type_template()
   let mutations   = mutations_template();
