@@ -3,13 +3,7 @@ function saveState(name) {
 
   try {
     savedContent = JSON.parse(localStorage.getItem('EWG-DATA'));
-  }
-
-  // If anything goes wrong, there is no data to load.
-  catch (err) {
-    cl('No previous data to load');
-    return;
-  }
+  }catch (err) {}
 
   let wyvern = wyvern_display.innerHTML;
 

@@ -31,5 +31,7 @@ function replace_pattern_in_string(STRING, PATTERN, VALUE) {
 // Reload saved wyvern names.
 
 function load_saved_wyvern_names() {
-  saved_wyerns = Object.keys(JSON.parse(localStorage.getItem('EWG-DATA')));
+  try {
+    saved_wyerns = Object.keys(JSON.parse(localStorage.getItem('EWG-DATA')));
+  } catch (err){}
 }
