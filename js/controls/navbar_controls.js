@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   save_save_modal.onclick = function () {
     let wyname = save_modal.querySelector('.modal-text-prompt').value
     let override = true;
-    if ( typeof saved_wyerns !== undefined) {
+    if ( typeof saved_wyerns !== "undefined") {
       if (saved_wyerns.includes(wyname)) {
         override = confirm('A wyvern called \"' + wyname + '\" already exists, are you sure want to overwrite it?');
       }
