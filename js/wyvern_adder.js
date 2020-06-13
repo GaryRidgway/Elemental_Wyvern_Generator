@@ -1,4 +1,4 @@
-var body;
+var display;
 
 document.addEventListener("DOMContentLoaded", function() {
   add_wyvern();
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function add_wyvern() {
-  body = document.querySelector('body');
+  display = document.querySelector('body #wyvern-display');
 
   if (!w){
     let wyvern    = WT_randomize();
@@ -18,7 +18,7 @@ function add_wyvern() {
   let statblock   = statblock_template();
   let level_table = level_table_template();
 
-  body.innerHTML = wyvern_type
+  display.innerHTML = wyvern_type
                  + '<div class="flex-half">'
                  + statblock
                  + level_table
