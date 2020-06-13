@@ -1,12 +1,14 @@
-var display;
+var wyvern_display;
+var modal_container;
 
 document.addEventListener("DOMContentLoaded", function() {
   add_wyvern();
+  add_modals();
 });
 
 
 function add_wyvern() {
-  display = document.querySelector('body #wyvern-display');
+  wyvern_display = document.querySelector('body #wyvern-display');
 
   if (!w){
     let wyvern    = WT_randomize();
@@ -18,10 +20,15 @@ function add_wyvern() {
   let statblock   = statblock_template();
   let level_table = level_table_template();
 
-  display.innerHTML = wyvern_type
+  wyvern_display.innerHTML = wyvern_type
                  + '<div class="flex-half">'
                  + statblock
                  + level_table
                  + '</div>'
                  + mutations;
+}
+
+function add_modals() {
+  modal_container = document.querySelector('#modal-container');
+  modal_container.innerHTML = modals_template();
 }

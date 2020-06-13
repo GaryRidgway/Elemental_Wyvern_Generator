@@ -12,6 +12,7 @@
     <script src="js/templates/wyvern_type_template.js"></script>
     <script src="js/templates/level_table_template.js"></script>
     <script src="js/templates/mutations_template.js"></script>
+    <script src="js/templates/modals_template.js"></script>
 
     <script src="js/helper_functions/create_wyvern_data.js"></script>
     <script src="js/helper_functions/ease_of_use_functions.js"></script>
@@ -27,12 +28,19 @@
     <script src="js/randomizers/EAM_randomizer.js"></script>
     <script src="js/randomizers/WT_randomizer.js"></script>
 
-    <script src="js/wyvern_adder.js"></script>
+    <script src="js/page_generate.js"></script>
 
     <script src="js/save_state/save_data.js"></script>
     <script src="js/save_state/load_data.js"></script>
+    <script src="js/save_state/modal_control.js"></script>
   </head>
   <body>
+    <div id='navbar'>
+      <button id='save-button'>Save</button>
+      <button id='load-button'>Load</button>
+    </div>
     <div id='wyvern-display'></div>
+    <div id='modal-container'></div>
+
   </body>
 </html>
