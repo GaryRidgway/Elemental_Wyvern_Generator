@@ -1,6 +1,6 @@
 body {
   background-color: #777;
-  margin: 25px;
+  margin: 4rem 1.75rem 1.75rem 1.75rem;
   font-family: Georgia, serif;
 }
 
@@ -388,6 +388,39 @@ body {
   background-color: #242424;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0rem 1.75rem;
+}
+
+#navbar button {
+  border: none;
+  background-color: transparent;
+  color: #e6f6ff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+#navbar button i {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+#navbar button:hover {
+  background-color: #000000;
+}
+
+#navbar button:active i, #navbar button:focus i {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
 }
 
 /* The Modal (background) */
@@ -419,9 +452,11 @@ body {
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   /* Could be more or less, depending on screen size */
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
 }
 
 .modal .close {

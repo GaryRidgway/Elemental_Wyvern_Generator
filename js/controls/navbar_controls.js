@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // When the user clicks on the button, open the modal
   save_btn.onclick = function () {
     save_modal.style.display = "block";
+    close_and_clear(load_modal);
   }
 
   // When the user clicks on <span> (x), close the modal
@@ -73,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // When the user clicks on the button, open the modal
   load_btn.onclick = function () {
     generate_select_list();
+    close_and_clear(save_modal);
     load_modal.style.display = "block";
   }
 
